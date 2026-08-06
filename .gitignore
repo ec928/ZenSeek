@@ -1,0 +1,17 @@
+# Settings, recent lists and reading positions -- per machine, not per project.
+ZenSeek.json
+
+# Runtime noise
+*.log
+EpubTemp_*/
+AppData/
+*.WebView2/
+
+# Copies of the whole app kept beside it. History is the place for these now; they are
+# left on disk untouched, just not tracked, because four parallel copies of every file
+# make every future diff harder to read than the thing it is describing.
+Backup 1/
+Backup 2 (baseline)/
+Backup 3 (integration attempt)/
+3 column theme backup/
+ZenSeek backup files for comparison/
