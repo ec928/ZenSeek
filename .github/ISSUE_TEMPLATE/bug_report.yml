@@ -1,0 +1,60 @@
+name: Bug report
+description: A search returned the wrong results, or the tool failed to run
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please avoid pasting full paths from your own machine — a folder name and file type is
+        usually enough to reproduce a search problem.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you search for, what did you expect to find, and what came back?
+      placeholder: Searching for a phrase across a folder of EPUBs returned no hits, though the phrase is definitely present.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: input
+    id: filetypes
+    attributes:
+      label: File types being searched
+      description: What kinds of files were in the folder, and roughly how many?
+      placeholder: e.g. ~300 EPUB and PDF files
+
+  - type: input
+    id: psversion
+    attributes:
+      label: PowerShell version
+      description: Run `$PSVersionTable.PSVersion` in PowerShell and paste the result.
+      placeholder: e.g. 5.1.26100.1
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      description: Press Win+R, type `winver`, and paste what it shows.
+      placeholder: e.g. Windows 11 Pro 24H2 (build 26100.1742)
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, or any error text the window showed.
